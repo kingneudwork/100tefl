@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="IE=9">
+        <meta name="author" content="Neud Tesfay Desta">
+        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Post | 100TEFL</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/icon-font.css" type="text/css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="shortcut icon" href="http://100tefl.com/images/favicon.ico" sizes="32x32" type="image/png">
+        
+        <link rel="stylesheet" href="../css/jodit.min.css">
+        <script src="../js/jodit.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <header class="pages_header">
+            <nav class="row sticky__services">
+                <div class="col-1-of-4 header__logo-box">
+                    <a href="../index.html"><img src="../img/logo.png" alt="logo" class="header__logo-img"></a>
+                </div>
+                
+                <label for="toggle" class="label-black">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                
+                <div class="col-3-of-4-drop-down menu">
+                    <ul class="pages_header__black-nav">
+                        <li><a href="../index.html" onClick="toggleDropdown()">Home</a></li>
+                        <li><a href="../index.html#section_news" onClick="toggleDropdown()">News</a></li>
+                        <li><a href="../pages/services.html" onClick="toggleDropdown()">Services</a></li>
+                        <li><a href="../index.html#section_contact" onClick="toggleDropdown()">Contact</a></li>
+                        <li><a href="../index.html#section_career-partners" onClick="toggleDropdown()">100tefl VIP</a></li>
+                        <li><a href="about.html" onClick="toggleDropdown()">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="row u-margin-top-huge u-margin-bottom-big">
+                <form method="post" action="#">
+                    <div class="row">
+                        <label for="email">Add the title</label>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <input type="email" name="email" id="email" placeholder="Enter news Title" required>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                            <label for="email">News feature Image/Video</label>
+                    </div>
+                    <div class="row u-margin-top-small u-margin-bottom-small">
+                        <input type="file" id="browse" name="fileupload"/>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <label for="password">Write the content</label>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <input type="password" name="password" id="password" placeholder="Your Password" required>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <label for="password">Others Images/Videos</label>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <input type="file" id="browse" name="fileupload"/>
+                    </div>
+                    <div class="row u-margin-top-tiny">
+                        <input type="news_write" value="Write News">
+                    </div>
+                </form>
+                
+                <script>
+                    var editor = new Jodit('#password');
+                </script>
+            </div>
+        </main>
+        
+        <script src="https://cdn.ckeditor.com/ckeditor5/12.1.0/classic/ckeditor.js"></script>
+    </body>
+</html>
